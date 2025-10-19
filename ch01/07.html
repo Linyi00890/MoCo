@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <p>Before the script...</p>
+    <script>
+
+        function someCode(dateString) {
+            console.log("正在處理的生日是:", dateString);
+            return 43; // 假設計算結果是 43 歲
+        }
+
+        // 告訴使用者這段程式碼
+        const ourPlanetName = 'Earth'; 
+        let currentVisitorName = 'Jane Doe'; 
+        
+        // 根據您的要求修改 (1) 變數名稱為全大寫，(2) 數值改變
+        const BIRTHDAY = '18.04.1982';
+        
+        // 修正：調用時必須傳入正確的變數名稱 BIRTHDAY
+        const age = someCode(BIRTHDAY); 
+        
+        // 可選：輸出結果以驗證
+        console.log(`訪客姓名: ${currentVisitorName}`);
+        console.log(`年齡: ${age}`);
+        
+    </script>
+    <p>...After the script.</p>
+</body>
+</html>
